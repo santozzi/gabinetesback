@@ -4,7 +4,19 @@ export class WakeonLanModel{
     private maquinasComercioPB = [
         {
             'nombre': "gcpb0",
-            'mac': '30-9C-23-04-87-FC'
+            'mac': '30-9C-23-04-87-FC',
+            'detalle':[
+                {
+                  'fecha': new Date(2021,8,1),
+                  'titulo': 'Primer encendido',
+                  'descripcion': 'Se encendio por primera vez'
+                },
+                {
+                  'fecha': new Date(2021,8,1),
+                  'titulo': 'Instalacion de windows',
+                  'descripcion': 'Se instalo windows 10'
+                }
+        ]
         },
         {
             'nombre': "gcpb1",

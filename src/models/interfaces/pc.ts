@@ -1,10 +1,15 @@
+export interface Detalle{
+    fecha:Date;
+    titulo:string;
+    descripcion:string;
+}
 export interface Pc{
-    escuela:string;
     nombre:string;
     mac:string;
-    isWol:boolean;
+    isWol?:boolean;
     //caracteristicas va a tener su tipo de procesador, memoria ram, disco duro, etc
-    caracteristicas:string;
+    caracteristicas?:string;
+    detalles?:Detalle[];
     
 }
 export interface componente{

@@ -1,6 +1,7 @@
 import { Controller, Get, Param } from '@nestjs/common';
 import { WakeonlanService } from 'src/services/wakeonlan/wakeonlan.service';
 
+
 @Controller('wakeonlan')
 export class WakeonlanController {
   constructor(private wakeOnLanService:WakeonlanService) {}
@@ -8,7 +9,6 @@ export class WakeonlanController {
   @Get(':escuela/')
   getWakeAll(@Param('escuela') escuela:string ): string {
     return this.wakeOnLanService.wakeAll(escuela);
-    
     
   }
   @Get(':escuela/:pc')

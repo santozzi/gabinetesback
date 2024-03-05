@@ -3,10 +3,10 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { WakeonlanController } from './controllers/wakeonlan/wakeonlan.controller';
 import { WakeonlanService } from './services/wakeonlan/wakeonlan.service';
-import { WakeonLanModel } from './models/LocalWol/wol.model';
+
 
 @Module({
-  imports: [WakeonLanModel],
+  imports: [],
   controllers: [AppController, WakeonlanController],
   providers: [AppService, WakeonlanService],
 })

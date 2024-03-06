@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import {WakeonLanModel} from './../../../models/LocalWol/wol.model'
+import {WakeonLanModel} from '../../../models/LocalDB/wol.model'
 import {Pc} from './../../../models/interfaces/pc';
 
 

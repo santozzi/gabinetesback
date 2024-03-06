@@ -6,12 +6,13 @@ import { WakeonlanService } from './services/wakeonlan/wakeonlan.service';
 import { ComercioPbController } from './controllers/escuelas/comercio-pb/comercio-pb.controller';
 import { ComercioPbService } from './services/escuelas/comercio-pb/comercio-pb.service';
 import { TodoService } from './services/todo/todo.service';
+import { TodoController } from './controllers/todo/todo.controller';
 
 
 
 @Module({
   imports: [],
-  controllers: [AppController, WakeonlanController, ComercioPbController],
+  controllers: [AppController, WakeonlanController, ComercioPbController, TodoController],
   providers: [AppService, WakeonlanService, ComercioPbService, TodoService],
 })
 export class AppModule {}
